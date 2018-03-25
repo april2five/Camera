@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" rel="stylesheet">
+  <title>Format Camera</title>
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+  <header>
+    <div class="header1">
+      <h3 class="header-logo">Fotomatic</h3>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Product Detail</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Follow Us</a><img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/instagram.png" alt=""></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- HEADER HIDDEN -->
+    <div class="header2">
+      <nav>
+        <ul>
+          <li class="menu">
+              <!-- DROPDOWN MENU -->
+              <div class="dropdown">
+                <div onclick="myFunction()" class="dropbtn">MENU</div>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Stores</a>
+                  <a href="#">Hours</a>
+                  <a href="#">wholesale</a>
+                </div>
+              </div>
+          </li>
+          <li><img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/ic-logo.svg" alt=""></li>
+          <li><img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/ic-product-detail.svg" alt=""></li>
+          <li><img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/ic-about-us.svg" alt=""></li>
+          <li class="joinbtn"><a href="#">Join Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- BG SECTION -->
+  <div class="bg">
+  </div>
+
+
+  <!-- MAIN SECTION -->
+  <div class="main">
+
+    <!-- JOIN SECTION -->
+    <div id="join">
+      <div class="join-section">
+        <p class="instant">Instant</p>
+        <h1>FORMAT CAMERA</h1>
+        <p class="emailus">Email us to request a demo and be in our waiting list for the Febuary 2017 release!</p>
+        <p class="join-wait">Join the waiting list</p>
+      </div>
+    </div>
+
+    <div class="mainbg">
+      <!-- FEATURE SECTION -->
+      <div id="feature">
+        <div class="feature-content f1">
+          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/feature-1.png" alt="">
+          <div class="feature-descrption">
+            <h1>Advanced, automatic, instant</h1>
+            <p>Shutter speed, apperture and flash output adjust automatically</p>
+          </div>
+        </div>
+        <div class="feature-content f2">
+          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/feature-2.png" alt="">
+          <div class="feature-descrption">
+            <h1>Beautifully crafted inside-out</h1>
+            <p>From the paint outside to the tiny screw inside, Fotomatic is crafted with love and 20-year of expertise</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILTER SECTION -->
+      <div id="filter">
+        <h1>Over 20+ filters to choose from</h1>
+        <p>Feed your creativity with 20 different filter designed by our eclectic in-house photographers!</p>
+      </div>
+
+      <!-- GALLERY SECTION -->
+      <div id="gallery">
+        <div class="gallery-content">
+          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/filter-1.png" alt="">
+          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/filter-2.png" alt="">
+          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/filter-3.png" alt="">
+          <img class="imghidden" src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/filter-4.png" alt="">
+        </div>
+      </div>
+
+      <!-- QUOTES SECTION -->
+      <div id="quotes">
+        <div class="quote">
+          <p>“It’s truly something that could create a brand new photography Renaissance”</p>
+        </div>
+        <div class="logo">
+          <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/photography-logo.png" alt="">
+        </div>
+      </div>
+
+      <!-- FOOTER SECTION -->
+      <footer>
+        <div class="copyright">
+          <p>© 2016 Fotomatic, All Rights Reserved</p>
+        </div>
+        <div class="designby">
+          <p>Designed in NYC</p>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+
+
+  <!-- SCRIPT SECTION -->
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+</body>
+</html>
